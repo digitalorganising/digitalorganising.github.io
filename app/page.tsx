@@ -1,4 +1,5 @@
 import SimpleCard from "@/components/SimpleCard";
+import ToolCard from "@/components/ToolCard";
 import {
   TypographyA,
   TypographyP,
@@ -11,6 +12,8 @@ import {
   LockClosedIcon,
   MagicWandIcon,
 } from "@radix-ui/react-icons";
+import searchIllustration from "../public/undraw_people_search_re_5rre.svg";
+import dataIllustration from "../public/undraw_personal_data_re_ihde.svg";
 
 export default function Index() {
   return (
@@ -89,6 +92,55 @@ export default function Index() {
         <h2 className="text-5xl lg:text-6xl font-semibold tracking-tight my-20 text-center">
           Web tools for organising
         </h2>
+        <h3 className="text-3xl font-semibold tracking-tight mb-8 lg:ml-2">
+          Tools
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
+          <ToolCard
+            name="Outlook Directory Exporter"
+            gradientClass="from-amber-200"
+            href="/outlook-directory-bookmarklet/"
+            image={{
+              alt: "An illustration of a woman searching through a directory of people",
+              image: searchIllustration,
+            }}
+          >
+            <TypographyP>
+              <TypographyStrong>
+                A simple tool for automating the process of finding everyone in
+                an Outlook directory.
+              </TypographyStrong>
+            </TypographyP>
+            <TypographyP>
+              Exports a CSV, and only uses data that the worker already has
+              access to via Outlook.
+            </TypographyP>
+          </ToolCard>
+          <ToolCard
+            name="Name Joiner"
+            gradientClass="from-blue-200"
+            href="/name-joiner/"
+            image={{
+              alt: "An illustration representing detailed personal data",
+              image: dataIllustration,
+            }}
+          >
+            <TypographyP>
+              <TypographyStrong>
+                A tool for matching up lists of staff with lists of members
+              </TypographyStrong>
+            </TypographyP>
+            <TypographyP>
+              To be used for workplace mapping: the tool matches entries based
+              on names and emails, and where exact matches can't be found it
+              suggests possibilities based on name similarity. It also
+              identifies members who can't be found in the staff list.
+            </TypographyP>
+          </ToolCard>
+        </div>
+        <h3 className="text-3xl font-semibold tracking-tight mb-8 mt-10 lg:ml-2">
+          Principles
+        </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
           <SimpleCard title="Secure" icon={<LockClosedIcon />}>
             <TypographyUl>

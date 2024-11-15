@@ -14,7 +14,7 @@ export default function SimpleCard({ title, icon, children }: Props) {
         <CardTitle className="text-2xl">{title}</CardTitle>
         {icon ?? null}
       </CardHeader>
-      <CardContent>{children}</CardContent>
+      <CardContent className="pb-7">{children}</CardContent>
     </Card>
   );
 }
