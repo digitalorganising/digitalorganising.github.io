@@ -23,7 +23,7 @@ export const TypographyStrong = createElement<HTMLSpanElement>(
 
 export const TypographyUl = createElement<HTMLUListElement>(
   "ul",
-  "ml-6 list-disc [&>li]:mt-2"
+  "ml-3 sm:ml-6 list-disc [&>li]:mt-2"
 );
 
 export const TypographyA = createElement<HTMLAnchorElement>(

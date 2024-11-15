@@ -90,10 +90,10 @@ export default function Index() {
         </div>
       </section>
       <section>
-        <h2 className="text-5xl lg:text-6xl font-semibold tracking-tight my-20 text-center">
+        <h2 className="text-5xl lg:text-6xl font-semibold tracking-tight my-16 lg:my-20 text-center">
           Web tools for organising
         </h2>
-        <h3 className="text-3xl font-semibold tracking-tight mb-8 lg:ml-2">
+        <h3 className="text-3xl font-semibold tracking-tight mb-6 lg:mb-8 lg:ml-2">
           Tools
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">

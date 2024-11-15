@@ -36,9 +36,9 @@ export default function ToolCard({
           <CardTitle className="text-3xl">{name}</CardTitle>
         </CardHeader>
         <CardContent className="h-full">
-          <div className="flex justify-between h-full space-x-4 mt-2">
+          <div className="flex flex-col sm:flex-row justify-between lg:h-full space-x-4 mt-2">
             <div>{children}</div>
-            <div className="max-w-40 px-4 self-center aspect-square flex flex-col justify-center">
+            <div className="max-w-28 sm:max-w-40 mt-6 sm:mt-0 sm:px-4 self-center aspect-square flex flex-col justify-center">
               <Image alt={image.alt} src={image.image} />
             </div>
           </div>
