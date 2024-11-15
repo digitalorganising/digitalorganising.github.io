@@ -8,6 +8,7 @@ import {
 } from "@/components/typography";
 import {
   AccessibilityIcon,
+  GitHubLogoIcon,
   GlobeIcon,
   LockClosedIcon,
   MagicWandIcon,
@@ -208,6 +209,15 @@ export default function Index() {
             </TypographyUl>
           </SimpleCard>
         </div>
+      </section>
+      <section>
+        <a
+          className="flex justify-center items-center text-2xl mx-auto mt-12 mb-9"
+          href="https://github.com/digitalorganising"
+        >
+          <GitHubLogoIcon className="size-10 mr-2" />
+          github.com/digitalorganising
+        </a>
       </section>
     </div>
   );
