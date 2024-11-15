@@ -1,13 +1,6 @@
 import { ReactNode } from "react";
 import Image from "next/image";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 type Props = {
   name: string;
@@ -35,12 +28,10 @@ export default function ToolCard({
         <CardHeader className="space-y-0 flex flex-row items-center justify-between pb-2 gap-2 [&>svg]:size-6 [&>svg]:block">
           <CardTitle className="text-3xl">{name}</CardTitle>
         </CardHeader>
-        <CardContent className="h-full">
-          <div className="flex flex-col sm:flex-row justify-between lg:h-full space-x-4 mt-2">
-            <div>{children}</div>
-            <div className="max-w-28 sm:max-w-40 mt-6 sm:mt-0 sm:px-4 self-center aspect-square flex flex-col justify-center">
-              <Image alt={image.alt} src={image.image} />
-            </div>
+        <CardContent className="flex flex-col sm:flex-row justify-between space-x-4 mt-2 lg:h-full">
+          <div>{children}</div>
+          <div className="max-w-28 sm:max-w-40 mt-6 sm:mt-0 sm:px-4 self-center aspect-square flex flex-col justify-center">
+            <Image alt={image.alt} src={image.image} />
           </div>
         </CardContent>
       </a>
