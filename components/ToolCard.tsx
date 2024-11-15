@@ -31,11 +31,11 @@ export default function ToolCard({
     <Card
       className={`bg-gradient-to-br ${gradientClass} to-60% hover:to-100% to-white flex flex-col`}
     >
-      <a href={href} target="_blank">
+      <a href={href}>
         <CardHeader className="space-y-0 flex flex-row items-center justify-between pb-2 gap-2 [&>svg]:size-6 [&>svg]:block">
           <CardTitle className="text-3xl">{name}</CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className="h-full">
           <div className="flex justify-between h-full space-x-4 mt-2">
             <div>{children}</div>
             <div className="max-w-40 px-4 self-center aspect-square flex flex-col justify-center">

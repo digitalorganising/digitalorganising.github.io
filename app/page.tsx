@@ -117,7 +117,7 @@ export default function Index() {
             </TypographyP>
           </ToolCard>
           <ToolCard
-            name="Name Joiner"
+            name="Staff/membership matcher"
             gradientClass="from-blue-200"
             href="/name-joiner/"
             image={{
@@ -127,7 +127,7 @@ export default function Index() {
           >
             <TypographyP>
               <TypographyStrong>
-                A tool for matching up lists of staff with lists of members
+                A tool for matching up lists of staff with lists of members.
               </TypographyStrong>
             </TypographyP>
             <TypographyP>
