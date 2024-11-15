@@ -1,5 +1,6 @@
 import SimpleCard from "@/components/SimpleCard";
 import {
+  TypographyA,
   TypographyP,
   TypographyStrong,
   TypographyUl,
@@ -91,13 +92,17 @@ export default function Index() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
           <SimpleCard title="Secure" icon={<LockClosedIcon />}>
             <TypographyUl>
-              <li>No data should ever leave the worker's device.</li>
               <li>
-                Workers are in control of where and when data is saved and who
-                processes it.
+                Workers must remain in control of their data, union membership
+                data, and employer data.
               </li>
               <li>
-                Nobody except the worker has access to the data they input.
+                No data that is input into a tool by a worker can leave their
+                device (ie, no data is ever sent to a server).
+              </li>
+              <li>
+                Tools must not compromise any system of an employer or other
+                third party.
               </li>
             </TypographyUl>
           </SimpleCard>
@@ -105,18 +110,24 @@ export default function Index() {
             <TypographyUl>
               <li>
                 No tool should require anything in order to function other than
-                a modern web browser
+                a modern web browser.
               </li>
-              <li>Tools should follow WCAG best practices where possible</li>
               <li>
-                They are do not require technical expertise beyond basic
+                Tools should follow accessibility (
+                <TypographyA href="https://www.w3.org/WAI/standards-guidelines/wcag/">
+                  WCAG
+                </TypographyA>
+                ) best practices where possible.
+              </li>
+              <li>
+                Tools should not require technical expertise beyond basic
                 workplace IT skills to use.
               </li>
             </TypographyUl>
           </SimpleCard>
           <SimpleCard title="Simple" icon={<MagicWandIcon />}>
             <TypographyUl>
-              <li>One tool should solve one known problem</li>
+              <li>One tool should solve one known problem.</li>
               <li>
                 Tools should be straightforward to use and should not aim to be
                 a complete product for workplace organising.
@@ -126,13 +137,21 @@ export default function Index() {
           <SimpleCard title="Open" icon={<GlobeIcon />}>
             <TypographyUl>
               <li>
-                Workers should be able to "hack" and modify a tool if they want
-                to
+                Workers should be able to modify a tool and create their own
+                version if they want to.
               </li>
               <li>
-                Tools must be open source and (in keeping with the security
-                requirement) should not use any external server, database or
-                other hosted service.
+                Tools must be open source (
+                <TypographyA href="https://choosealicense.com/licenses/mit/">
+                  MIT License
+                </TypographyA>
+                ) and should not use any external server, database or other
+                hosted service: they are static web pages that can be saved in
+                their entirety.
+              </li>
+              <li>
+                Tools must not gain unauthorised access to employer systems or
+                data.
               </li>
             </TypographyUl>
           </SimpleCard>
