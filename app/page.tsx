@@ -13,8 +13,6 @@ import {
   LockClosedIcon,
   MagicWandIcon,
 } from "@radix-ui/react-icons";
-import searchIllustration from "../public/undraw_people_search_re_5rre.svg";
-import dataIllustration from "../public/undraw_personal_data_re_ihde.svg";
 
 export default function Index() {
   return (
@@ -39,7 +37,7 @@ export default function Index() {
           subject of their labour lies in emails, calendars, virtual meetings,
           WhatsApp chats, presentations and spreadsheets. As trade unionists,
           our priority is to help workers to organise and build their power. We
-          must organise where the workers are, and so{" "}
+          must organise where the work happens, and so{" "}
           <TypographyStrong>we must organise online</TypographyStrong>.
         </TypographyP>
         <label
@@ -99,12 +97,8 @@ export default function Index() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
           <ToolCard
             name="Outlook Directory Exporter"
-            gradientClass="from-amber-200"
+            gradientClass="from-amber-300"
             href="/outlook-directory-bookmarklet/"
-            image={{
-              alt: "An illustration of a woman searching through a directory of people",
-              image: searchIllustration,
-            }}
           >
             <TypographyP>
               <TypographyStrong>
@@ -119,12 +113,8 @@ export default function Index() {
           </ToolCard>
           <ToolCard
             name="Staff/membership matcher"
-            gradientClass="from-blue-200"
+            gradientClass="from-blue-300"
             href="/name-joiner/"
-            image={{
-              alt: "An illustration representing detailed personal data",
-              image: dataIllustration,
-            }}
           >
             <TypographyP>
               <TypographyStrong>
