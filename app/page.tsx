@@ -128,6 +128,22 @@ export default function Index() {
               identifies members who can't be found in the staff list.
             </TypographyP>
           </ToolCard>
+          <ToolCard
+            name="Real terms pay calculator"
+            gradientClass="from-rose-300"
+            href="/inflationiser/"
+          >
+            <TypographyP>
+              <TypographyStrong>
+                A tool for calculating inflation and real pay over a time
+                period, using live ONS statistics.
+              </TypographyStrong>
+            </TypographyP>
+            <TypographyP>
+              Input pay settlements over a given time period, and see how they
+              kept up with inflation.
+            </TypographyP>
+          </ToolCard>
         </div>
         <h3 className="text-3xl font-semibold tracking-tight mb-8 mt-10 lg:ml-2">
           Principles
